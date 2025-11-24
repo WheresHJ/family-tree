@@ -1,7 +1,7 @@
 // app.js - updated to read Option A JSON layout
 (async function () {
   try {
-    const res = await fetch("../data/tree.json");
+    const res = await fetch("data/tree.json");
     const json = await res.json();
 
     // JSON layout: { people: {...}, families: {...}, tree: { chart: {...}, root: {...} } }
