@@ -1,0 +1,41 @@
+<!--
+Project: GRAMPS Static Tree Viewer (Treant.js)
+Structure:
+/ index.html
+/assets/css/site.css
+/treant/
+Treant.css
+Treant.js
+vendor/* (Raphael or other dependencies)
+/data/
+tree.json (generated from GRAMPS XML via preprocessing script)
+/js/
+app.js (front-end logic that loads JSON + initializes Treant)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Family Tree Viewer</title>
+<link rel="stylesheet" href="./treant/Treant.css" />
+<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+<div id="app" class="container mx-auto p-4">
+<h1 class="text-2xl font-semibold mb-4">Family Tree</h1>
+<div id="tree-container"></div>
+</div>
+
+
+<!-- Treant + vendor deps -->
+<script src="./treant/vendor/raphael.js"></script>
+<script src="./treant/Treant.js"></script>
+
+
+<!-- App logic -->
+<script src="./js/app.js"></script>
+</body>
+</html>
